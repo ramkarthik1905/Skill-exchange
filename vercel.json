@@ -1,5 +1,16 @@
 {
+  "buildCommand": "cd client && npm run build",
+  "outputDirectory": "client/dist",
+  "env": {
+    "MONGODB_URI": "@mongodb_uri",
+    "CLIENT_URL": "@client_url",
+    "JWT_SECRET": "@jwt_secret"
+  },
   "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/[...slug]"
+    },
     {
       "source": "/(.*)",
       "destination": "/index.html"

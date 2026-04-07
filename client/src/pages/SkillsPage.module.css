@@ -1,0 +1,182 @@
+.h1 {
+  margin: 0 0 8px;
+  font-size: 1.6rem;
+}
+
+.lead {
+  color: #94a3b8;
+  margin-bottom: 20px;
+  max-width: 720px;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+  align-items: flex-end;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 140px;
+}
+
+.field label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #94a3b8;
+}
+
+.input,
+.select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #7c3aed;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  height: fit-content;
+}
+
+.btnGhost {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #64748b;
+  background: transparent;
+  color: #e2e8f0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 14px;
+  text-align: left;
+}
+
+.card h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  color: #f8fafc;
+}
+
+.meta {
+  font-size: 0.8rem;
+  color: #a78bfa;
+  margin-bottom: 8px;
+}
+
+.desc {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  margin: 0 0 10px;
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.tag {
+  font-size: 0.72rem;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #334155;
+  color: #cbd5e1;
+}
+
+.pop {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.panel {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 24px;
+}
+
+.panel h2 {
+  margin: 0 0 14px;
+  font-size: 1.05rem;
+}
+
+.createGrid {
+  display: grid;
+  gap: 12px;
+  max-width: 520px;
+}
+
+.detailOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.75);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  z-index: 50;
+}
+
+.detailCard {
+  background: #1e293b;
+  border: 1px solid #475569;
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 480px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.detailCard h2 {
+  margin: 0 0 12px;
+}
+
+.stats {
+  display: flex;
+  gap: 16px;
+  margin: 12px 0;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+.muted {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.footer {
+  margin-top: 12px;
+  color: #64748b;
+  font-size: 0.85rem;
+}

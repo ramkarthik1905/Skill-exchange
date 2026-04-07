@@ -1,0 +1,163 @@
+.h1 {
+  margin: 0 0 8px;
+  font-size: 1.6rem;
+}
+
+.lead {
+  color: #94a3b8;
+  margin-bottom: 18px;
+}
+
+.calendarWrap {
+  background: #e2e8f0;
+  border-radius: 12px;
+  padding: 8px;
+  margin-bottom: 24px;
+  color: #0f172a;
+}
+
+.panel {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.panel h2 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+}
+
+.form {
+  display: grid;
+  gap: 12px;
+  max-width: 420px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #7c3aed;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  justify-self: start;
+}
+
+.muted {
+  color: #94a3b8;
+}
+
+.msg {
+  margin-top: 12px;
+  color: #86efac;
+}
+
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal h3 {
+  margin: 0 0 16px 0;
+  color: #e2e8f0;
+  font-size: 1.2rem;
+}
+
+.eventDetails {
+  margin-bottom: 20px;
+}
+
+.eventDetails p {
+  margin: 8px 0;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+
+.eventDetails strong {
+  color: #e2e8f0;
+}
+
+.modalActions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btnAccept {
+  background: #059669;
+}
+
+.btnAccept:hover {
+  background: #047857;
+}
+
+.btnDecline {
+  background: #dc2626;
+}
+
+.btnDecline:hover {
+  background: #b91c1c;
+}
+
+.btnStart {
+  background: #2563eb;
+}
+
+.btnStart:hover {
+  background: #1d4ed8;
+}
+
+.btnComplete {
+  background: #16a34a;
+}
+
+.btnComplete:hover {
+  background: #15803d;
+}
+
+.btnCancel {
+  background: #6b7280;
+}
+
+.btnCancel:hover {
+  background: #4b5563;
+}

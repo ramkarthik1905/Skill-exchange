@@ -1,0 +1,362 @@
+.h1 {
+  margin: 0 0 8px;
+  font-size: 1.6rem;
+}
+
+.lead {
+  color: #94a3b8;
+  margin-bottom: 24px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.statCard {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+}
+
+.statNumber {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e2e8f0;
+  margin-bottom: 4px;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filters {
+  display: flex;
+  gap: 16px;
+  align-items: end;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filterLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.searchInput {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  min-width: 200px;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #7c3aed;
+}
+
+.select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: #e2e8f0;
+  font-size: 0.9rem;
+}
+
+.refreshBtn {
+  padding: 8px 16px;
+  border: 1px solid #475569;
+  border-radius: 6px;
+  background: #1e293b;
+  color: #e2e8f0;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.refreshBtn:hover {
+  background: #334155;
+}
+
+.msg {
+  margin: 12px 0;
+  color: #86efac;
+}
+
+.muted {
+  color: #94a3b8;
+}
+
+.exchangesList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.exchangeCard {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.exchangeHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 16px;
+}
+
+.partnerName {
+  margin: 0 0 4px 0;
+  font-size: 1.2rem;
+  color: #e2e8f0;
+}
+
+.partnerHeadline {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.statusPending {
+  background: #fbbf24;
+  color: #1f2937;
+}
+
+.statusAccepted {
+  background: #34d399;
+  color: #064e3b;
+}
+
+.statusDeclined {
+  background: #ef4444;
+  color: #7f1d1d;
+}
+
+.statusInProgress {
+  background: #3b82f6;
+  color: #1e3a8a;
+}
+
+.statusCompleted {
+  background: #10b981;
+  color: #064e3b;
+}
+
+.statusCancelled {
+  background: #6b7280;
+  color: #1f2937;
+}
+
+.statusDefault {
+  background: #6b7280;
+  color: #f9fafb;
+}
+
+.exchangeDetails {
+  margin-bottom: 16px;
+}
+
+.skillInfo {
+  margin-bottom: 12px;
+}
+
+.skillInfo p {
+  margin: 4px 0;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+
+.sessionInfo {
+  background: #0f172a;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.sessionInfo p {
+  margin: 0;
+  color: #e2e8f0;
+  font-size: 0.9rem;
+}
+
+.notes {
+  background: #0f172a;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.notes p {
+  margin: 4px 0;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+
+.exchangeMeta {
+  display: flex;
+  gap: 16px;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  flex-wrap: wrap;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.btnAccept {
+  background: #059669;
+  color: #fff;
+}
+
+.btnAccept:hover {
+  background: #047857;
+}
+
+.btnDecline {
+  background: #dc2626;
+  color: #fff;
+}
+
+.btnDecline:hover {
+  background: #b91c1c;
+}
+
+.btnStart {
+  background: #2563eb;
+  color: #fff;
+}
+
+.btnStart:hover {
+  background: #1d4ed8;
+}
+
+.btnComplete {
+  background: #16a34a;
+  color: #fff;
+}
+
+.btnComplete:hover {
+  background: #15803d;
+}
+
+.btnCancel {
+  background: #6b7280;
+  color: #fff;
+}
+
+.btnCancel:hover {
+  background: #4b5563;
+}
+
+.btnNote {
+  background: #7c3aed;
+  color: #fff;
+}
+
+.btnNote:hover {
+  background: #6d28d9;
+}
+
+.btnSave {
+  background: #059669;
+  color: #fff;
+}
+
+.btnSave:hover {
+  background: #047857;
+}
+
+.waiting {
+  color: #fbbf24;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.completed {
+  color: #10b981;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.cancelled {
+  color: #6b7280;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.declined {
+  color: #ef4444;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.noteForm {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.noteTextarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #475569;
+  border-radius: 6px;
+  background: #1e293b;
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.noteTextarea:focus {
+  outline: none;
+  border-color: #7c3aed;
+}
+
+.noteActions {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  justify-content: flex-end;
+}

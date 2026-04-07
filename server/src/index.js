@@ -12,7 +12,8 @@ import { seedSkillsIfEmpty } from "./seedSkills.js";
 import { seedSampleDataIfEmpty } from "./seedData.js";
 
 const app = express();
-app.use(cors({ origin: true, credentials: true }));
+const clientUrl = process.env.CLIENT_URL || "http://localhost:5173";
+app.use(cors({ origin: clientUrl, credentials: true }));
 app.use(express.json());
 
 app.use("/api/auth", authRoutes);

@@ -28,16 +28,23 @@ app.get("/api/health", (_req, res) => res.json({ ok: true }));
 const port = process.env.PORT || 5052;
 const mongoUri = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/skill_exchange";
 
+console.log(`🚀 Starting Skill Exchange Server...`);
+console.log(`📍 Connecting to MongoDB...`);
+
 mongoose
   .connect(mongoUri)
   .then(async () => {
+    console.log(`✅ MongoDB connected`);
+    console.log(`🌱 Seeding skills...`);
     await seedSkillsIfEmpty();
+    console.log(`🌱 Seeding sample data...`);
     await seedSampleDataIfEmpty();
+    console.log(`✅ Database seeding completed`);
     app.listen(port, () => {
-      console.log(`Skill Exchange API on http://localhost:${port}`);
+      console.log(`🎉 Skill Exchange API running on http://localhost:${port}`);
     });
   })
   .catch((err) => {
-    console.error("MongoDB connection error:", err.message);
+    console.error("❌ MongoDB connection error:", err.message);
     process.exit(1);
   });
